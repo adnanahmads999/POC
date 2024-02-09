@@ -1,0 +1,21 @@
+<div class="login-container">
+    <img class="film" src="assets/images/film.png" alt="">
+    <div class="logo">Rotten tomatoes</div>
+    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime cupiditate ut ab quia, voluptatem quidem reprehenderit deleniti labore quas modi excepturi sapiente, eveniet fuga ex aspernatur, odit eaque architecto perspiciatis beatae? Odio iusto, debitis inventore ducimus dicta sunt nobis beatae voluptas explicabo, totam eos repudiandae cumque? Quia necessitatibus voluptas, cum iusto voluptatum repellendus! Quisquam.</div>
+
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" class="form-control" [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <label for="pword">Password</label>
+            <input type="password" name="pword" class="form-control" [(ngModel)]="password">
+        </div>
+
+        <div class="btn-container">
+            <div class="error">{{errorMsg}}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>

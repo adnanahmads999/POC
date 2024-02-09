@@ -1,0 +1,39 @@
+<div class="pipe-container">
+    <h1>Pipes in Angular</h1>
+
+    <div>
+        <h3>Currency Pipe</h3>
+        <div> Initially-> Amount: {{amount}}</div>
+        <div>After-> Amount: {{amount | currency}}</div>
+        <div>After-> Amount: {{amount | currency: 'INR'}}</div>
+    </div>
+    <br>
+
+    <div>
+        <h3>Case Pipes</h3>
+        <div>Visit to {{ placeName | lowercase }}</div>
+        <div>Visit to {{ placeName | uppercase }}</div>
+        <div>Visit to {{ placeName | titlecase }}</div>
+    </div>
+    <br>
+
+    <div>
+        <h3>Percent Pipe</h3>
+        <div>Mark: {{ mark | percent }}</div>
+    </div>
+    <br>
+
+    <div>
+        <h3>Date Pipe</h3>
+        <div>Today's Date is {{ today }}</div>
+        <div>Today's Date is {{ today | date }}</div>
+        <div>Today's Date is {{ today | date: 'MM-dd-yyyy' }}</div>
+    </div>
+
+    <br>
+
+    <div>
+        <h3>Custom Pipe</h3>
+        <div class="initials">{{ name | initials}}</div>
+      </div>
+</div>
